@@ -6,7 +6,7 @@
 [![pkg.go.dev reference](https://pkg.go.dev/badge/github.com/dunky-star/go-json-xml-tool.svg)](https://pkg.go.dev/github.com/dunky-star/go-json-xml-tool)
 [![Go Coverage](https://github.com/dunky-star/go-json-xml-tool/wiki/coverage.svg)](https://raw.githack.com/wiki/dunky-star/go-json-xml-tool/coverage.html)
 
-# GOLANG HTTP JSON/XML -AND- FILE TOOL
+# GO HTTP JSON/XML -AND- FILE LIBRARY
 
 A Go module of HTTP helpers focused on **JSON**, **XML**, multipart uploads, and small web utilities. Use it in handlers and services when you want consistent envelopes, body limits, and clearer decode errors without pulling in a full framework.
 
