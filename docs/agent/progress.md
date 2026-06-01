@@ -2,13 +2,20 @@
 
 ## Project Overview
 
-**go-json-xml-toolbox** — Go utilities for JSON and XML.
+**go-json-xml-tool** — `jsonxmltool` package for JSON/XML HTTP helpers.
+
+Module: `github.com/dunky-star/go-json-xml-tool`
 
 ---
 
 ## Completed Features
 
-None yet.
+- `go.mod` (Go 1.26, module `github.com/dunky-star/go-json-xml-tool`)
+- Core `Kit` API: JSON/XML read/write/errors, uploads, attachments, slugs, `PostJSON`
+- JSON/XML I/O via `Encoder`/`Decoder`; public APIs use `any`
+- Test suite and `testdata/` fixtures
+- CI workflow (vet, staticcheck, race tests)
+- README and agent docs
 
 ---
 
@@ -20,14 +27,11 @@ None currently.
 
 ## Backlog
 
-- Go module and package layout (`go.mod`, `internal/`, `cmd/`)
-- JSON helpers (parse, pretty-print, validate)
-- XML helpers (parse, indent, validate)
-- JSON ↔ XML conversion
-- CLI entry points and examples
-- Tests and sample fixtures
+- JSON ↔ XML conversion helpers
+- Richer XML decode error messages (parity with JSON)
+- Optional `cmd/` examples
 
 ---
 
 **Last Updated:** May 31, 2026  
-**Status:** Starting
+**Status:** Library baseline in place
