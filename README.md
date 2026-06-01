@@ -8,24 +8,24 @@
 
 # GO HTTP JSON/XML -AND- FILE LIBRARY
 
-A Go module of HTTP helpers focused on **JSON**, **XML**, multipart uploads, and small web utilities. Use it in handlers and services when you want consistent envelopes, body limits, and clearer decode errors without pulling in a full framework.
+A Go module of HTTP helpers focused on ***JSON***, ***XML***, multipart uploads, and small web utilities. Use it in handlers and services when you want consistent envelopes, body limits, and clearer decode errors without pulling in a full framework.
 
 This is a **utility package**, not a web framework. It does not provide routing, middleware stacks, auth, validation libraries, or OpenAPI tooling.
 
 ## When to use
 
-- You build APIs with **`net/http`** (or a thin router) and want shared handler patterns.
-- You want **body size limits**, stricter JSON parsing (unknown fields, single document), and **human-readable decode errors** without copying that logic into every handler.
-- You want **consistent JSON/XML response shapes** (`JSONEnvelope`, `XMLEnvelope`) across endpoints.
-- You need small, related helpers in the same style: **multipart uploads**, **attachment downloads**, **URL slugs**, **outbound JSON POSTs**.
+- You build APIs with ***`net/http`*** (or a thin router) and want shared handler patterns.
+- You want ***body size limits***, stricter JSON parsing (unknown fields, single document), and ***human-readable decode errors*** without copying that logic into every handler.
+- You want ***consistent JSON/XML response shapes*** (`JSONEnvelope`, `XMLEnvelope`) across endpoints.
+- You need small, related helpers in the same style: ***multipart uploads***, ***attachment downloads***, ***URL slugs***, ***outbound JSON POSTs***.
 
-The JSON handler example below is most valuable when you have **many endpoints** repeating the same read → validate → respond flow. For a single trivial handler, the standard library alone is often enough.
+The JSON handler example below is most valuable when you have ***many endpoints*** repeating the same read -> validate -> respond flow. For a single trivial handler, the standard library alone is often enough.
 
 ## When not to use
 
-- You already use **Gin, Echo, Fiber, Chi with binding**, or similar—and get request parsing, limits, and errors from that stack.
-- You need a **full framework** (routing, DI, migrations, generated API docs).
-- Your service is **not HTTP-facing**, or only needs one-off `json.Marshal` / `json.Unmarshal` with no shared conventions.
+- You already use ***Gin, Echo, Fiber, Chi with binding***, or similar and get request parsing, limits, and errors from that stack.
+- You need a ***full framework*** (routing, DI, migrations, generated API docs).
+- Your service is ***not HTTP-facing***, or only needs one-off `json.Marshal` / `json.Unmarshal` with no shared conventions.
 
 ## Install
 
