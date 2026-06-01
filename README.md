@@ -19,7 +19,7 @@ This is a **utility package**, not a web framework. It does not provide routing,
 - You want ***consistent JSON/XML response shapes*** (`JSONEnvelope`, `XMLEnvelope`) across endpoints.
 - You need small, related helpers in the same style: ***multipart uploads***, ***attachment downloads***, ***URL slugs***, ***outbound JSON POSTs***.
 
-The JSON handler example below is most valuable when you have ***many endpoints*** repeating the same read -> validate -> respond flow. For a single trivial handler, the standard library alone is often enough.
+The JSON handler example below is most valuable when you have ***many endpoints*** repeating the same read <> validate <> respond flow. For a single trivial handler, the standard library alone is often enough.
 
 ## When not to use
 
