@@ -10,6 +10,8 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -31,4 +33,10 @@ jobs:
           staticcheck ./...
 
       - name: Test
-        run: go test -race -count=1 ./...
+        run: go test -race -count=1 -coverprofile=coverage.out ./...
+
+      - name: Update coverage report
+        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
+        uses: ncruces/go-coverage-report@main
+        with:
+          coverage-file: coverage.out

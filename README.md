@@ -1,8 +1,14 @@
-# go-json-xml-tool
+[![Version](https://img.shields.io/badge/goversion-1.26.x-blue.svg)](https://go.dev/dl/)
+<a href="https://go.dev"><img src="https://img.shields.io/badge/powered_by-Go-3362c2.svg?style=flat-square" alt="Built with Go"></a>
+[![License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](https://github.com/dunky-star/go-json-xml-tool/blob/main/LICENSE.md)
+[![Go Report Card](https://goreportcard.com/badge/github.com/dunky-star/go-json-xml-tool)](https://goreportcard.com/report/github.com/dunky-star/go-json-xml-tool)
+[![Tests](https://github.com/dunky-star/go-json-xml-tool/actions/workflows/tests.yml/badge.svg)](https://github.com/dunky-star/go-json-xml-tool/actions/workflows/tests.yml)
+[![pkg.go.dev reference](https://pkg.go.dev/badge/github.com/dunky-star/go-json-xml-tool.svg)](https://pkg.go.dev/github.com/dunky-star/go-json-xml-tool)
+[![Go Coverage](https://github.com/dunky-star/go-json-xml-tool/wiki/coverage.svg)](https://raw.githack.com/wiki/dunky-star/go-json-xml-tool/coverage.html)
+
+# GOLANG HTTP JSON/XML -AND- FILE TOOL
 
 A Go module of HTTP helpers focused on **JSON**, **XML**, multipart uploads, and small web utilities. Use it in handlers and services when you want consistent envelopes, body limits, and clearer decode errors without pulling in a full framework.
-
-**Go:** 1.26+
 
 ## Install
 
@@ -102,5 +108,3 @@ func pingHandler(w http.ResponseWriter, r *http.Request) {
 go test ./...
 go vet ./...
 ```
-
-Agent workflow files live under `docs/agent/` and `AGENTS.md`.
