@@ -4,7 +4,7 @@
 [![Go Report Card](https://goreportcard.com/badge/github.com/dunky-star/go-json-xml-tool)](https://goreportcard.com/report/github.com/dunky-star/go-json-xml-tool)
 [![Tests](https://github.com/dunky-star/go-json-xml-tool/actions/workflows/tests.yml/badge.svg)](https://github.com/dunky-star/go-json-xml-tool/actions/workflows/tests.yml)
 [![pkg.go.dev reference](https://pkg.go.dev/badge/github.com/dunky-star/go-json-xml-tool.svg)](https://pkg.go.dev/github.com/dunky-star/go-json-xml-tool)
-[![Go Coverage](https://github.com/dunky-star/go-json-xml-tool/wiki/coverage.svg)](https://raw.githack.com/wiki/dunky-star/go-json-xml-tool/coverage.html)
+[![Coverage](https://img.shields.io/badge/coverage-92%25-brightgreen)](https://github.com/dunky-star/go-json-xml-tool/actions/workflows/tests.yml)
 
 # GO HTTP JSON/XML -AND- FILE LIBRARY
 

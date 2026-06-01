@@ -10,8 +10,6 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
     steps:
       - uses: actions/checkout@v4
 
@@ -35,8 +33,7 @@ jobs:
       - name: Test
         run: go test -race -count=1 -coverprofile=coverage.out ./...
 
-      - name: Update coverage report
-        if: github.ref == 'refs/heads/main' && github.event_name == 'push'
-        uses: ncruces/go-coverage-report@main
-        with:
-          coverage-file: coverage.out
+      - name: Coverage summary
+        run: |
+          echo "### Test coverage" >> "$GITHUB_STEP_SUMMARY"
+          go tool cover -func=coverage.out | tail -1 >> "$GITHUB_STEP_SUMMARY"
